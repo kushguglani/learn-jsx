@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import MyClassComponent from './MyClassComponent';
+import "./App.css"
 
 function App() {
+  const data = "hello";
+  const loggedIn = true;
+  let friends = ["Nikhil", "ashvary", "kush", "rahul"];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    
+    <MyClassComponent name="kush"/>
+      {
+        loggedIn === true ?
+          <div className="helolo">
+            <h1>Hello1 logged in </h1>
+            <h1>Hello1</h1>
+          </div>
+          :
+          <div>
+            <h1>Hello2 logged out</h1>
+            <h1>Hello2</h1>
+          </div>
+      }
+      <hr />
+      <p>hello this is a para tag</p>
+      <ul>
+       {
+        friends.map((friend)=>{
+          return <li>{friend}</li>
+        })
+       }
+      </ul>
+      <ul>
+       {
+        friends.map((friend)=><li>{friend}</li>)
+       }
+      </ul>
+    </>
   );
 }
 
