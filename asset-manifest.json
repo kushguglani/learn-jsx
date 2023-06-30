@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/learn-jsx/static/css/main.f91f6969.css",
+    "main.js": "/learn-jsx/static/js/main.af32c1cb.js",
+    "index.html": "/learn-jsx/index.html",
+    "main.f91f6969.css.map": "/learn-jsx/static/css/main.f91f6969.css.map",
+    "main.af32c1cb.js.map": "/learn-jsx/static/js/main.af32c1cb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f91f6969.css",
+    "static/js/main.af32c1cb.js"
+  ]
+}
